@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="mantra.css">
+</head>
+<body>
+
+  <button  class="bag-btn" onclick="
+     count++;
+     document.querySelector('.head').innerHTML = `Your Bag has ${count} item`;">Add to bag
+  </button>
+
+
+
+
+
+
+  <button class="wish-btn" onclick="
+     count--;
+     if(count < 1){
+      count = 0;
+      document.querySelector('.head').innerHTML = `Your Bag has  item`;
+      
+     }
+     document.querySelector('.head').innerHTML = `Your Bag has ${count} item`;
+    
+     
+     
+     
+     "> Move to Wishlist
+     
+  </button>
+
+
+
+  <button class="bag-btn" onclick="
+     count+=2;
+     document.querySelector('.head').innerHTML = `Your Bag has ${count} item`;">
+  Add 1+1 Sale Item
+
+  </button>
+  <h1 class="head">0</h1>
+  <script>
+    let count = 0;
+   
+ document.querySelector('.head').innerText = `Your Bag has ${count} item`;
+  </script>
+</body>
+</html>
